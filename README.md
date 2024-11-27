@@ -1,5 +1,16 @@
 # [GitHub Desktop](https://desktop.github.com) - The Linux Fork
 
+## Arch linux build instructions
+
+- Install base dependencies like python-pip and python-setuptools: `pacman -Sy base-devel python python-pip python-setup-tools`
+- Install nvm via AUR `yay nvm`
+- Use node 16 `nvm install 16.13.0`
+- Enable Corepack to use yarn `corepack enable`
+- Install project dependencies (ignore ts errors) `yarn`
+- Build using `yarn build:prod`
+
+If successsful, it should output a message like "Built to /home/dan/tmp/desktop/dist/github-desktop-linux-x64".
+
 [![CI](https://github.com/shiftkey/desktop/actions/workflows/ci.yml/badge.svg)](https://github.com/shiftkey/desktop/actions/workflows/ci.yml)
 
 [GitHub Desktop](https://desktop.github.com/) is an open source [Electron](https://www.electronjs.org/)-based
